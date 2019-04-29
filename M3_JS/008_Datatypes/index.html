@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    //kiểu dữ liệu chuỗi
+    var name = "Cấn duy đức";
+    // kiểu số
+    var age = 18;
+    //kiểu đối tượng
+    var obj = {}; // khai báo đối tượng
+    // vừa khai báo đối tượng vừa khai báo thuộc tính đối tượng
+    var student1 = {name:"cấn duy đức", age: 22};
+    /*
+    * khái báo đối tượng và khai báo
+    * các thuộc tính của đối tượng trên các dòng khác nhau*/
+    var student2 ={};
+    student2.name = "cấn duy đức";
+    student2.age = 22;
+
+    //kiểu boolean true hoặc false
+    var gender1 = true;
+    var gender2 = false;
+
+    //kiểu dữ liệu mảng
+    var list_name = ['nguyễn văn a','nguyễn văn b', 'nguyễn văn c'];
+    var list_age = [21,22,23];
+    var list_student = [student1, student2];
+    // mảng thì bao gồm nhiều phần tử có đánh số thứ tự mà thuật ngữ gọi là key
+    // key trong mảng của js và php thì bắt đầu bằng 0
+    //mỗi phần tử trong mảng phân tách bởi dấu phẩy, và có 1 key duy nhất
+    console.log('list_name: ' + list_name[1]);
+    console.log('list_age: ' + list_age[0]);
+    console.log('list_student[0]: ' + list_student[0].name);
+    console.log('list_student[0]: ' + list_student[0].age);
+
+    //kiểu undefined
+    var a; // undefined xuất hiện khi mà chúng ta không gán giá trị cho biến
+    //undefined có nghĩa là không xác định
+
+    // lệnh typeof
+    // trả về kiểu dữ liệu của biến
+    console.log('typeof a: ' + typeof a);
+    console.log('typeof name: ' + typeof name);
+    console.log('typeof age: ' + typeof age);
+    console.log('typeof gender1: ' + typeof gender1);
+    console.log('typeof gender2: ' + typeof gender2);
+    console.log('typeof student2: ' + typeof student2);
+    console.log('typeof list_name: ' + typeof list_name);
+
+    // dạng rỗng
+    var name3 = "";
+
+    // dạng null (không có gì cả) khác với undefined (không được khai báo)
+    var data = null;
+    console.log('data: ' + typeof data);
+</script>
+</body>
+</html>

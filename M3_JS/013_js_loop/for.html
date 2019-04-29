@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Vòng lặp là chu trình lặp đi lặp lại, có điểm bắt đầu, điểm kết thúc, sự thay đổi trong mỗi lần lặp</h1>
+<h1>Vòng lặp for(khởi_đầu; điều_kiện_dừng; sự_thay_đổi_mỗi_lần_lặp)</h1>
+
+<div>
+    <pre>
+        var tuoi = 0;
+        for(tuoi = 0; tuoi < 100; tuoi++){
+
+        }
+    </pre>
+</div>
+
+<div>
+    <table style="width: 100%; background:green; color: tomato">
+        <thead>
+            <tr>
+                <td>STT</td>
+                <td>Tên</td>
+                <td>Diện tích</td>
+            </tr>
+        </thead>
+        <tbody id="content">
+                <td>1</td>
+                <td>Hà nội</td>
+                <td>100</td>
+        </tbody>
+    </table>
+    <div>
+        <button onclick="generaProvince()">Tạo data</button>
+    </div>
+
+    <script type="text/javascript">
+        for(var i = 0; i <= 10; i++){
+            console.log(i);
+        }
+
+        function generaProvince(){
+            var html='';
+
+            //khởi tạo đối tượng
+            var hanoi = {id: 1, name: 'ha noi', s:100};
+            var hcm = {id: 2, name: 'ho chi minh', s:100};
+            var binhduong = {id: 3, name:'binh duong', s:100};
+            var camau = {id: 4, name:'ca mau', s:100};
+            var longan = {id: 5, name:'long an', s:100};
+            var vinhlong = {id: 6,name:'vinh long', s:100};
+            var cantho = {id: 7, name: 'can tho', s:100};
+            var thaibinh = {id: 8, name: 'thai binh', s:100};
+
+            var provice = [hanoi, hcm, binhduong, camau, longan, vinhlong, cantho, thaibinh];
+
+            /*
+            cách viết rút gọn
+            html = html + 'abc';=> html += 'abc';
+            * */
+
+            for(var i= 0; i<provice.length; i++){
+                console.log(i);
+                html +='<tr>';
+                html +='<td>' + provice[i].id + '</td>';
+                html +='<td>' + provice[i].name + '</td>';
+                html +='<td>' + provice[i].s + '</td>';
+                html +='</tr>';
+
+            }
+            document.getElementById('content').innerHTML = html;
+        }
+    </script>
+</div>
+</body>
+</html>
