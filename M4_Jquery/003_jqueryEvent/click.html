@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>sự kiện click trong jquery</h1>
+<p>Test</p>
+
+<button id="eclick">click</button>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+     $(document).ready(function(){
+         $('#eclick').click(function(){
+             alert('trigger click');
+             $('p').html('sự kiện click');
+         });
+     });
+</script>
+</body>
+</html>
